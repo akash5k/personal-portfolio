@@ -2,10 +2,10 @@
   cursor: none;
 }
 .App {
-  display: flex;
+  /* display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: center; */
   height: 100vh;
-  background-color: #282c34;
+  background-color: black;
   color: white;
 }
