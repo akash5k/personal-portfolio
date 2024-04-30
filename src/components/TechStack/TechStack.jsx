@@ -22,7 +22,7 @@ const TechStack = () => {
     }
   ]
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center h-screen">
     <div className="flex flex-col items-center mb-4">
       <h1 className="text-3xl">Tech Stack</h1>
       <Bar />

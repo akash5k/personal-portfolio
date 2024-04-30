@@ -2,7 +2,7 @@
 import "./App.css";
 import Hero from "./components/Hero/Hero";
 import Reveal from "./components/Animations/Reveal";
-// import About from "./components/About/About";
+import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
 import Projects from "./components/Projects/Projects";
 
@@ -11,9 +11,13 @@ function App() {
     <div className="App">
       <Hero />
       <Reveal>
-        {/* <About /> */}
+        <About />
+      </Reveal>
+      <Reveal>
         <TechStack />
-        <Projects/>
+      </Reveal>
+      <Reveal>
+        <Projects />
       </Reveal>
     </div>
   );
