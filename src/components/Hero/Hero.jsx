@@ -30,7 +30,7 @@ const reachOut = [
 const Hero = () => {
   return (
     <>
-    <div  className="opacity-25">
+    <div  className="opacity-45">
     <Particles id="particles"/>
     </div>
       <div
@@ -41,15 +41,14 @@ const Hero = () => {
           backgroundPosition: "0 13px",
           opacity: 0.3,
         }}
-      />
-    
+      />    
       
-      <div className="flex flex-col relative z-20 text-center mx-auto w-full h-screen md:w-3/5 mt-10 md:mt-20 py-20">
+      <div className="flex flex-col relative z-20 text-center mx-auto w-full h-screen md:w-3/5 mt-0 md:mt-20 pt-4 md:py-20">
         <motion.div
           initial={{ opacity: 0, scale: 1, y: -50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.5 }}
-          className="h-1/3 mb-8"
+          className="h-1/3 mb-4 md:mb-8"
         >
           <img
             src={Akash}

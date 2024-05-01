@@ -7,12 +7,12 @@ const TechStack = () => {
   const techStack = [
     {
       index: 1,
-      title: 'Programming Languages',
-      value: 'C/C++, JavaScript, TypeScript',
+      title: 'Languages',
+      value: 'C/C++, HTML, CSS, JavaScript, TypeScript',
     },
     {
       index: 2,
-      title: 'Frontend',
+      title: 'Frmeaworks & Libraries',
       value: 'React, Next.js, Tailwind CSS, Bootstrap, Framermotion',
     },
     {
@@ -35,12 +35,12 @@ const TechStack = () => {
       </div>
       <div className="flex flex-col items-center w-full">
         {techStack.map((item, index) => (
-          <div key={index} className="w-full md:w-2/3 lg:w-1/2 rounded-lg shadow-md p-4 m-4">
+          <div key={index} className="w-full md:w-2/3 lg:w-1/2 rounded-lg shadow-md p-4 ">
             <h2 className="font-medium text-center mb-4">{item.title}</h2>
             <div className="flex flex-wrap justify-center">
               {item.value.split(',').map((tech, index) => (
                 <Reveal key={index}>
-                  <motion.span className="bg-secondary-900 text-slate-200 rounded-md px-4 py-2 m-2">
+                  <motion.span className="flex flex-wrap bg-secondary-900 text-slate-200 rounded-md px-4 py-2 m-2">
                     {tech.trim()}
                   </motion.span>
                 </Reveal>

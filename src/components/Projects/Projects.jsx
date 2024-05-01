@@ -1,7 +1,8 @@
 import React from "react";
 import Reveal from "../Animations/Reveal";
 import Bar from "../Animations/Bar";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { VscLinkExternal } from "react-icons/vsc";
 import { coinSense, investWise, mailNest } from "../../assets/images";
 
 const Projects = () => {
@@ -22,13 +23,13 @@ const Projects = () => {
         "Effortlessly manage your finances with CoinSense, a modern expense manager with a user-friendly interface. Aided with charts to visualize your expenses.",
       thumbnail: coinSense,
       repositoryLink: "https://github.com/akash5k/coin-sense",
-      deployment: "coin-sense-material.vercel.app",
+      deployment: "https://coin-sense-material.vercel.app/",
     },
     {
       index: 3,
       title: "Invest Wise",
       description:
-        "A web app that helps you effortlessly track your investments, visualize your portfolio performance, and generate insightful reports through interactive graphs and charts.",
+        "A web app that helps you effortlessly track your investments, visualize your portfolio performance, generate insightful reports through interactive graphs and charts.",
       thumbnail: investWise,
       repositoryLink: "https://github.com/akash5k/investWise",
     },
@@ -36,7 +37,7 @@ const Projects = () => {
 
   return (
     <div className="mt-16 flex flex-col justify-center items-center min-h-screen ">
-      <div className="flex flex-col items-center mb-8">
+      <div className="flex flex-col items-center mb-14">
         <h1 className="text-3xl font-semibold tracking-widest uppercase">Projects</h1>
         <Bar />
       </div>
@@ -45,7 +46,7 @@ const Projects = () => {
           <Reveal>
             <div
               key={index}
-              className="flex flex-col justify-around max-w-md h-[400px] mx-4 mb-6 bg-secondary-900 p-2 rounded-xl shadow-md overflow-hidden"
+              className="flex flex-col justify-around max-w-md h-[400px] mx-4 mb-6 bg-secondary-950 p-2 rounded-xl shadow-md overflow-hidden"
             >
               <img
                 src={project.thumbnail}
@@ -59,12 +60,12 @@ const Projects = () => {
                 <p className="text-sm text-slate-100 text-justify opacity-50">
                   {project.description}
                 </p>
-                <div className="flex justify-center text-xs mt-4 gap-2">
+                <div className="flex justify-center text-xs m-4 gap-2">
                   <a
                     href={project.repositoryLink}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex flex-row items-center gap-2 bg rounded-full bg-secondary-600 p-3 text-white "
+                    className="flex flex-row items-center gap-2 bg rounded-full bg-primary-600 p-3 text-white "
                   >
                     <FaGithub /> Source Code
                   </a>
@@ -75,7 +76,7 @@ const Projects = () => {
                       rel="noreferrer"
                       className="flex flex-row items-center gap-2 bg rounded-full bg-secondary-600 p-3 text-white"
                     >
-                      <FaExternalLinkAlt /> Visit
+                      <VscLinkExternal /> Visit
                     </a>
                   )}
                 </div>

@@ -53,7 +53,7 @@ const ParticlesComponent = (props) => {
         },
         modes: {
           push: {
-            distance: 200,
+            distance: 100,
             duration: 15,
           },
           grab: {
@@ -79,7 +79,7 @@ const ParticlesComponent = (props) => {
             default: "bounce",
           },
           random: true,
-          speed: 1,
+          speed: 1.5,
           straight: false,
         },
         number: {

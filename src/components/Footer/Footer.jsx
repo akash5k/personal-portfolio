@@ -1,8 +1,10 @@
 import React from "react";
 import Reveal from "../Animations/Reveal";
-import { FaTwitter, FaInstagram } from "react-icons/fa";
+import {  FaInstagram ,FaGithub, FaLinkedinIn,} from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const Footer = () => {
+    
   return (
     <div className="w-full min-h-screen flex items-center justify-center bg-black">
       <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
@@ -18,15 +20,24 @@ const Footer = () => {
          
         </div>
         <div className="flex flex-col">
-          <div className="flex my-12 flex-row justify-between">           
+          <div className="flex my-12 flex-row justify-between">    
+          <Reveal>       
             <div className="flex flex-row space-x-8 items-center justify-between">
+            <a href="https://www.linkedin.com/in/akash-parida-ap/">
+                <FaLinkedinIn className="text-3xl" />
+              </a>
+            <a href="https://github.com/akash5k">
+                <FaGithub className="text-3xl" />
+              </a>
               <a href="https://www.instagram.com/akash24._/">
                 <FaInstagram className="text-3xl" />
               </a>
               <a href="https://www.twitter.com">
-                <FaTwitter className="text-3xl" />
+                <RiTwitterXFill className="text-3xl" />
               </a>
+              
             </div>
+            </Reveal>
           </div>
           <hr className="border-gray-600" />
           <p className="w-full text-center mt-12 text-gray-600">
