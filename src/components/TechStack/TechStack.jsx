@@ -29,14 +29,14 @@ const TechStack = () => {
   return (
     <div className="flex flex-col justify-center items-center">
     <div className="flex flex-col items-center mb-4">
-      <h1 className="text-3xl">Tech Stack</h1>
+      <h1 className="text-2xl">Tech Stack</h1>
       <Bar />
     </div>
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col text-xl justify-center items-center'>
       {techStack.map((item,index) => (
         <div key={index} className="rounded-lg shadow-md pt-4 m-4">
-          <h2 className="text-xl font-semibold text-center mb-4">{item.title}</h2>
-          <span className="flex text-lg gap-4 ">
+          <h2 className="font-medium text-center mb-4">{item.title}</h2>
+          <span className="flex text-sm gap-4 ">
             {item.value.split(',').map((tech,index) => (
               <Reveal>
               <motion.span 

@@ -53,7 +53,7 @@ const Hero = () => {
         >
           <img
             src={Akash}
-            className="rounded-full w-60 h-60 mx-auto"
+            className="rounded-full w-44 h-44 mx-auto"
             alt="Akash"
           />
         </motion.div>
@@ -63,27 +63,27 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col text-center gap-2"
         >
-          <h1 className="text-4xl font-semibold ">
+          <h1 className="text-2xl font-semibold ">
             Hi, I am{" "}
             <span className="font-extrabold text-blue-600 opacity-90 tracking-wider">
               Akash Parida
             </span>{" "}
             .
           </h1>
-          <p className="text-2xl opacity-60 mx-10">
+          <p className="text-md opacity-60 mx-10">
             Full-stack Web Developer with expertise in React, and Competitive
             Programming. Final year IT undergrad at IIIT Bhubaneswar, India.
           </p>
           <motion.span
-            className="text-md"
+            className="text-xs"
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.4 }}
             transition={{ delay: 2 }}
           >
-            Designing the future, one pixel at a time.
+            🌱 Designing the future, one pixel at a time.
           </motion.span>
         </motion.div>
-        <div className="mb-20">
+        <div className="mb-16">
           <ul className="flex justify-center gap-4 mt-8">
             {reachOut.map((item, index) => (
               <motion.li
@@ -96,7 +96,7 @@ const Hero = () => {
                   href={item.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 p-2 bg-secondary-900 text-white rounded-md hover:bg-white  hover:text-black 800 transition-all"
+                  className="flex items-center text-sm gap-2 p-2 bg-secondary-900 text-white rounded-md hover:bg-white  hover:text-black 800 transition-all"
                 >
                   {item.icon}
                   <span>{item.name}</span>
@@ -105,7 +105,7 @@ const Hero = () => {
             ))}
           </ul>
         </div>
-        <div className="flex flex-row items-center justify-center gap-2 mt-10 ">
+        <div className="flex flex-row text-sm items-center justify-center gap-2 mt-2 opacity-45 ">
           <motion.div
             animate={{
               y: [0, -5, 0],

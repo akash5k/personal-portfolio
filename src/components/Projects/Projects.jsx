@@ -35,31 +35,31 @@ const Projects = () => {
   ];
 
   return (
-    <div className="mt-16 flex flex-col justify-center items-center ">
+    <div className="mt-16 flex flex-col justify-center items-center h-screen ">
       <div className="flex flex-col items-center mb-8">
-        <h1 className="text-3xl">Projects</h1>
+        <h1 className="text-2xl">Projects</h1>
         <Bar />
       </div>
-      <div className="w-full flex flex-wrap justify-center items-center gap-8">
+      <div className="w-4/5 flex flex-row justify-center items-center gap-8 mx-8">
         {projects.map((project, index) => (
           <Reveal>
             <div
               key={index}
-              className="flex flex-col justify-around max-w-md h-[480px] mx-4 mb-6 bg-secondary-900 p-4 rounded-xl shadow-md overflow-hidden"
+              className="flex flex-col justify-around max-w-md h-[400px] mx-4 mb-6 bg-secondary-900 p-2 rounded-xl shadow-md overflow-hidden"
             >
               <img
                 src={project.thumbnail}
                 alt={project.title}
-                className="w-full h-60 object-cover rounded-md object-center"
+                className="w-full h-60 object-scale-down rounded-xl object-center "
               />
               <div className="px-4 py-2">
-                <h3 className="text-xl text-slate-100 font-semibold mb-2">
+                <h3 className="text-md text-slate-100 font-semibold mb-2">
                   {project.title}
                 </h3>
-                <p className="text-md text-slate-100 text-justify opacity-50">
+                <p className="text-sm text-slate-100 text-justify opacity-50">
                   {project.description}
                 </p>
-                <div className="flex justify-center text-md mt-4 gap-2">
+                <div className="flex justify-center text-xs mt-4 gap-2">
                   <a
                     href={project.repositoryLink}
                     target="_blank"
