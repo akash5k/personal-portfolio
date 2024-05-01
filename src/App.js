@@ -7,6 +7,7 @@ import Reveal from "./components/Animations/Reveal";
 // import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
 import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
       <Reveal>
         <Projects />
       </Reveal>
+      <Footer/>
     </div>
   );
 }

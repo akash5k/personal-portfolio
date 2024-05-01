@@ -35,9 +35,9 @@ const Projects = () => {
   ];
 
   return (
-    <div className="mt-16 flex flex-col justify-center items-center  ">
+    <div className="mt-16 flex flex-col justify-center items-center min-h-screen ">
       <div className="flex flex-col items-center mb-8">
-        <h1 className="text-2xl">Projects</h1>
+        <h1 className="text-3xl font-semibold tracking-widest uppercase">Projects</h1>
         <Bar />
       </div>
       <div className="w-4/5 flex flex-col md:flex-row justify-center items-center gap-8 mx-8">

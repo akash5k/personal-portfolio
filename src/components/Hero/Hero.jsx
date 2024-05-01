@@ -63,7 +63,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col text-center gap-2"
         >
-          <h1 className="text-2xl font-semibold ">
+          <h1 className="text-4xl font-semibold ">
             Hi, I am{" "}
             <span className="font-extrabold text-blue-600 opacity-90 tracking-wider">
               Akash Parida

@@ -28,9 +28,9 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center min-h-screen">
       <div className="flex flex-col items-center mb-4">
-        <h1 className="text-2xl">Tech Stack</h1>
+        <h1 className="text-3xl font-semibold tracking-widest uppercase">Tech Stack</h1>
         <Bar />
       </div>
       <div className="flex flex-col items-center w-full">
