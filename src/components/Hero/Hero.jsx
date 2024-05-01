@@ -44,12 +44,12 @@ const Hero = () => {
       />
     
       
-      <div className="flex flex-col relative z-20 text-center mx-auto w-full md:w-3/5 py-20">
+      <div className="flex flex-col relative z-20 text-center mx-auto w-full h-screen md:w-3/5 mt-20 py-20">
         <motion.div
           initial={{ opacity: 0, scale: 1, y: -50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.5 }}
-          className="h-1/3 mt-20 mb-8"
+          className="h-1/3 mb-8"
         >
           <img
             src={Akash}
