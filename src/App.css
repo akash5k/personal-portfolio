@@ -8,3 +8,10 @@ body{
   height: 100vh;
   color: #E1EBEC;
 }
+
+#particles canvas{
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

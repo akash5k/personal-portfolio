@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Particles from "../Animations/Particles";
 import {
   FaLinkedinIn,
   FaGithub,
@@ -29,8 +30,11 @@ const reachOut = [
 const Hero = () => {
   return (
     <>
+    <div  className="opacity-25">
+    <Particles id="particles"/>
+    </div>
       <div
-        className="bg-repeat absolute left-0 top-0 h-full w-full"
+        className="bg-repeat absolute left-0 top-0 h-full w-full "
         style={{
           backgroundImage: `url(${heroBg})`,
           backgroundSize: "initial",
@@ -38,6 +42,8 @@ const Hero = () => {
           opacity: 0.3,
         }}
       />
+    
+      
       <div className="flex flex-col relative z-20 text-center mx-auto w-full md:w-3/5 py-20">
         <motion.div
           initial={{ opacity: 0, scale: 1, y: -50 }}
@@ -69,12 +75,12 @@ const Hero = () => {
             Programming. Final year IT undergrad at IIIT Bhubaneswar, India.
           </p>
           <motion.span
-            className="text-sm"
+            className="text-md"
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.4 }}
             transition={{ delay: 2 }}
           >
-            🌱 Transforming complexity into beautiful interfaces is always fun.
+            Designing the future, one pixel at a time.
           </motion.span>
         </motion.div>
         <div className="mb-20">

@@ -15,7 +15,7 @@ const About = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center">
       <div className="mt-10 flex flex-col items-center mb-8">
         <h1 className="text-3xl">About Me</h1>
         <Bar />

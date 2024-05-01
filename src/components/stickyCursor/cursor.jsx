@@ -8,7 +8,7 @@ const Cursor = () => {
     y: useMotionValue(0)
   };
 
-  const smoothOptions = { damping: 20, stiffness: 400, mass: 0.5 };
+  const smoothOptions = { damping: 30, stiffness: 400, mass: 0.5 };
   const smoothOptionsSecond = { damping: 40, stiffness: 400, mass: 0.5 };
   const smoothMouse = {
     x: useSpring(mouse.x, smoothOptions),

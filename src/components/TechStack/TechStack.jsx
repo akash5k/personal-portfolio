@@ -6,24 +6,28 @@ import Reveal from '../Animations/Reveal'
 const TechStack = () => {
   const techStack = [
     {
+      index : 1,
       title : "Programming Languages",
       value : "C/C++, JavaScript, TypeScript"
     },
     {
+      index : 2,
       title : "Frontend",
       value : "React, Next.js, Tailwind CSS, Bootstrap, Framermotion"
     },
     {
+      index : 3,
       title : "Backend",
       value : "Node.js, Express.js, MongoDB"
     },
     {
+      index : 4,
       title : "Tools",
       value : "Git, Github, VS Code, Postman"
     }
   ]
   return (
-    <div className="flex flex-col justify-center items-center h-96">
+    <div className="flex flex-col justify-center items-center">
     <div className="flex flex-col items-center mb-4">
       <h1 className="text-3xl">Tech Stack</h1>
       <Bar />

@@ -4,10 +4,9 @@ import Cursor from "./components/stickyCursor/cursor";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Reveal from "./components/Animations/Reveal";
-import About from "./components/About/About";
+// import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
 import Projects from "./components/Projects/Projects";
-
 function App() {
   return (
     <div className="App">
@@ -15,9 +14,9 @@ function App() {
   <Cursor />
     <Navbar />
       <Hero />
-      <Reveal>
+      {/* <Reveal>
         <About />
-      </Reveal>
+      </Reveal> */}
       <Reveal>
         <TechStack />
       </Reveal>
