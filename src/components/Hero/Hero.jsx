@@ -90,7 +90,7 @@ const Hero = () => {
                   href={item.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 p-2 bg-secondary text-white rounded-md hover:bg-white  hover:text-black 800 transition-all"
+                  className="flex items-center gap-2 p-2 bg-secondary-900 text-white rounded-md hover:bg-white  hover:text-black 800 transition-all"
                 >
                   {item.icon}
                   <span>{item.name}</span>

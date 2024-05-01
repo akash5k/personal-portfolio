@@ -2,12 +2,9 @@
   cursor: none;
 }
 body{
-  background-color: black;
+  background-color: #000000;
 }
 .App {
-  /* display: flex;
-  text-align: center;
-  justify-content: center; */
   height: 100vh;
-  color: white;
+  color: #E1EBEC;
 }

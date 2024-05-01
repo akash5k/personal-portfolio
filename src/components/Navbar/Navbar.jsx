@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between items-center px-8 mx-40 pt-6 font-medium bg-black sticky top-0 text-teal-50'>
+    <div className='flex justify-between items-center px-8 mx-40 pt-6 font-medium bg-background sticky top-0 text-teal-50'>
       <h1 className='text-2xl tracking-tighter font-bold hidden md:block'>AKASH</h1>
       <nav>
         <motion.ul className='flex gap-4'
