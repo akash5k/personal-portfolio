@@ -44,7 +44,7 @@ const Hero = () => {
       />
     
       
-      <div className="flex flex-col relative z-20 text-center mx-auto w-full h-screen md:w-3/5 mt-20 py-20">
+      <div className="flex flex-col relative z-20 text-center mx-auto w-full h-screen md:w-3/5 mt-10 md:mt-20 py-20">
         <motion.div
           initial={{ opacity: 0, scale: 1, y: -50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
