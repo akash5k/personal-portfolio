@@ -1,19 +1,16 @@
-// import { useEffect, useState } from 'react';
 import "./App.css";
 import Cursor from "./components/stickyCursor/cursor";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import Reveal from "./components/Animations/Reveal";
-import About from "./components/About/About";
-import TechStack from "./components/TechStack/TechStack";
-import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer/Footer";
+import About from "./components/About";
+import TechStack from "./components/TechStack";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-    
-  <Cursor />
-    <Navbar />
+      <Navbar />
       <Hero />
       <Reveal>
         <About />
@@ -24,7 +21,8 @@ function App() {
       <Reveal>
         <Projects />
       </Reveal>
-      <Footer/>
+      <Footer />
+      <Cursor />
     </div>
   );
 }

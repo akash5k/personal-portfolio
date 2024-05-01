@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Particles from "../Animations/Particles";
+import Particles from "./Animations/Particles";
 import {
   FaLinkedinIn,
   FaGithub,
   FaFileDownload,
   FaArrowDown,
 } from "react-icons/fa";
-import { Akash, heroBg } from "../../assets/images";
+import { Akash, heroBg } from "../assets/images";
 
 const reachOut = [
   {
@@ -34,21 +34,21 @@ const Hero = () => {
     <Particles id="particles"/>
     </div>
       <div
-        className="bg-repeat absolute left-0 top-0 h-full w-full "
+        className="bg-repeat absolute left-0 top-0 h-full w-full opacity-50 md:opacity-30 "
         style={{
           backgroundImage: `url(${heroBg})`,
           backgroundSize: "initial",
           backgroundPosition: "0 13px",
-          opacity: 0.3,
+          // opacity: 0.3,
         }}
       />    
       
-      <div className="flex flex-col relative z-20 text-center mx-auto w-full h-screen md:w-3/5 mt-0 md:mt-20 pt-4 md:py-20">
+      <div className="flex flex-col relative z-20 text-center mx-auto w-full h-screen md:w-3/5 mt-0 md:mt-10 pt-4 md:py-20">
         <motion.div
           initial={{ opacity: 0, scale: 1, y: -50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.5 }}
-          className="h-1/3 mb-4 md:mb-8"
+          className="md:h-1/3 justify-items-center m-4 md:mb-8 "
         >
           <img
             src={Akash}
@@ -62,14 +62,13 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col text-center gap-2"
         >
-          <h1 className="text-4xl font-semibold ">
+          <h1 className="text-4xl font-semibold mt-2 md:mt-0">
             Hi, I am{" "}
             <span className="font-extrabold text-blue-600 opacity-90 tracking-wider">
               Akash Parida
-            </span>{" "}
-            .
+            </span>
           </h1>
-          <p className="text-md opacity-60 mx-10">
+          <p className="text-md md:text-xl opacity-60 mx-10 text-balance">
             Full-stack Web Developer with expertise in React, and Competitive
             Programming. Final year IT undergrad at IIIT Bhubaneswar, India.
           </p>

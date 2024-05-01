@@ -1,5 +1,5 @@
 import React from "react";
-import Reveal from "../Animations/Reveal";
+import Reveal from "./Animations/Reveal";
 import {  FaInstagram ,FaGithub, FaLinkedinIn,} from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 

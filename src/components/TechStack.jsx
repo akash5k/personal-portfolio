@@ -1,7 +1,7 @@
 import React from 'react';
-import Bar from '../Animations/Bar';
+import Bar from './Animations/Bar';
 import { motion } from 'framer-motion';
-import Reveal from '../Animations/Reveal';
+import Reveal from './Animations/Reveal';
 
 const TechStack = () => {
   const techStack = [

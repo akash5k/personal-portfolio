@@ -1,9 +1,9 @@
 import React from "react";
-import Reveal from "../Animations/Reveal";
-import Bar from "../Animations/Bar";
+import Reveal from "./Animations/Reveal";
+import Bar from "./Animations/Bar";
 import { FaGithub } from "react-icons/fa";
 import { VscLinkExternal } from "react-icons/vsc";
-import { coinSense, investWise, mailNest } from "../../assets/images";
+import { coinSense, investWise, mailNest } from "../assets/images";
 
 const Projects = () => {
   const projects = [

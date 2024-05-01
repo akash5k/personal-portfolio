@@ -1,6 +1,6 @@
 import React from "react";
-import Bar from "../Animations/Bar";
-import Reveal from "../Animations/Reveal";
+import Bar from "./Animations/Bar";
+import Reveal from "./Animations/Reveal";
 
 const About = () => {
 
@@ -56,7 +56,7 @@ const About = () => {
                   {item.year}
                 </span>
                 <div className="flex flex-col w-2/3">
-                  <h2 className=" text-secondary-800 font-bold">
+                  <h2 className=" text-secondary-700 font-bold">
                     {item.title}
                   </h2>
                   <p className=" text-slate-200 font-medium">{item.place}</p>
@@ -80,7 +80,7 @@ const About = () => {
                   {item.year}
                 </span>
                 <div className="flex flex-col w-2/3">
-                  <h2 className=" text-secondary-800 font-bold">
+                  <h2 className=" text-secondary-700 font-bold">
                     {item.title}
                   </h2>
                   <p className=" text-slate-100">{item.place}</p>
