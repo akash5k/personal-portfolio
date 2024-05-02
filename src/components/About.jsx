@@ -40,7 +40,7 @@ const About = () => {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen">
       <div className="mt-10 flex flex-col items-center mb-14">
-       <h1 className="text-3xl font-semibold tracking-widest uppercase">About Me</h1>
+       <h1 className="text-3xl md:text-4xl font-semibold tracking-widest uppercase">About Me</h1>
         <Bar />
       </div>
       <div className="w-full flex flex-col md:flex-row rounded-lg shadow-md justify-around px-6 md:px-32">
