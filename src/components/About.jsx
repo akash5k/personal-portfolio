@@ -1,10 +1,9 @@
 import React from "react";
-import Bar from "./Animations/Bar";
-import Reveal from "./Animations/Reveal";
+import Bar from "./Animations/Bar"
+import Reveal from "./Animations/Reveal"
 
 const About = () => {
-
-  const education = [
+  const educationData = [
     {
       index: 1,
       title: "B.Tech in Information Technology",
@@ -28,7 +27,7 @@ const About = () => {
     },
   ];
 
-  const work = [
+  const workExperienceData = [
     {
       index: 1,
       title: "Intership Trainee",
@@ -38,56 +37,59 @@ const About = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
-      <div className="mt-10 flex flex-col items-center mb-14">
+    <div class="relative mt-16 flex flex-col justify-center items-center min-h-screen ">
+     <div className="mt-10 flex flex-col items-center">
        <h1 className="text-3xl md:text-4xl font-semibold tracking-widest uppercase">About Me</h1>
         <Bar />
       </div>
-      <div className="w-full flex flex-col md:flex-row rounded-lg shadow-md justify-around px-6 md:px-32">
-        {/* Educational Qualifications */}
-        <div className="flex flex-col gap-4 md:gap-6">
-          <h1 className="text-2xl font-semibold text-center mb-4">
-            Educational Qualifications
-          </h1>
-          {education.map((item, index) => (
+      <div class="w-full py-20 flex flex-col md:flex-row justify-around px-6 md:px-32">
+        <div class="flex flex-col  divide-y divide-slate-200 [&>*]:py-14">
+          <div class="w-full max-w-md mx-auto">
+            <div class="-my-6">
+              <h2 className="text-2xl font-bold text-center mb-6">Education</h2>
+
+              {educationData.map((item) => (
             <Reveal>
-              <div key={index} className="flex items-center gap-2  ">
-                <span className="text-sm w-1/3 mr-2 bg-primary-700 text-center rounded-full">
-                  {item.year}
-                </span>
-                <div className="flex flex-col w-2/3">
-                  <h2 className=" text-secondary-700 font-bold">
+                <div key={item.id} class="relative pl-8 sm:pl-32 py-6 group">
+                  <div class=" text-secondary-700 font-bold mb-1 sm:mb-0">
                     {item.title}
-                  </h2>
-                  <p className=" text-slate-200 font-medium">{item.place}</p>
-                  <span className=" text-slate-100 text-xs font-extralight">
-                    {item.grades}
-                  </span>
+                  </div>
+                  <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                    <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-medium uppercase w-20 h-6 mb-3 sm:mb-0 text-slate-200 bg-primary-700 rounded-full">
+                      {item.year}
+                    </time>
+                    <div class=" text-slate-200 font-medium">{item.place}</div>
+                  </div>
+                  <div class="text-slate-500 text-sm">{item.grades}</div>
                 </div>
-              </div>
-            </Reveal>
-          ))}
+                </Reveal>
+              ))}
+            </div>
+          </div>
         </div>
-        {/* Work Experience */}
-        <div className="flex flex-col md:gap-6">
-          <h1 className="text-2xl font-semibold text-center mb-4 mt-12 md:mt-0">
-            Work Experience
-          </h1>
-          {work.map((item, index) => (
-            <Reveal>
-              <div key={index} className="flex items-center gap-2">
-                <span className="text-sm w-1/3 mr-2 bg-primary-700 text-center rounded-full">
-                  {item.year}
-                </span>
-                <div className="flex flex-col w-2/3">
-                  <h2 className=" text-secondary-700 font-bold">
+        <div class="flex flex-col  divide-y divide-slate-200 [&>*]:py-14">
+          <div class="w-full max-w-md mx-auto">
+            <div class="-my-6">
+              <h2 className="text-2xl font-bold text-center mb-8">
+                Work Experience
+              </h2>
+              {workExperienceData.map((item) => (
+                <Reveal>
+                <div key={item.id} class="relative pl-8 sm:pl-32 py-6 group">
+                  <div class="text-secondary-700 font-bold mb-1 sm:mb-0">
                     {item.title}
-                  </h2>
-                  <p className=" text-slate-100">{item.place}</p>
+                  </div>
+                  <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                  <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-medium uppercase w-20 h-6 mb-3 sm:mb-0 text-slate-200 bg-primary-700 rounded-full">
+                      {item.year}
+                    </time>
+                    <div class="text-slate-200 font-medium">{item.place}</div>
+                  </div>
                 </div>
-              </div>
-            </Reveal>
-          ))}
+                </Reveal>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
