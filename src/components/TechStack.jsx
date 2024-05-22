@@ -1,53 +1,152 @@
-import React from 'react';
-import Bar from './Animations/Bar';
-import { motion } from 'framer-motion';
-import Reveal from './Animations/Reveal';
+import React, { useState } from "react";
+import Bar from "./Animations/Bar";
+import { FaTools, FaServer, FaGithub, FaGitAlt } from "react-icons/fa";
+import { PiCodeDuotone } from "react-icons/pi";
+import {
+  SiFramework,
+  SiCplusplus,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiBootstrap,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiPostman,
+} from "react-icons/si";
+
+import { TbBrandFramerMotion, TbBrandVscode } from "react-icons/tb";
+
+import Reveal from "./Animations/Reveal";
+
+const techStack = [
+  {
+    index: 1,
+    title: "Languages",
+    desc: "Languages that I have picked up over the years",
+    value: [
+      { name: "C/C++", icon: SiCplusplus },
+      { name: "HTML", icon: SiHtml5 },
+      { name: "CSS", icon: SiCss3 },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
+    ],
+    icon: PiCodeDuotone,
+  },
+  {
+    index: 2,
+    title: "Frameworks & Libraries",
+    desc: "Libraries and Frameworks that I prefer to work with",
+    value: [
+      { name: "React", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Bootstrap", icon: SiBootstrap },
+      { name: "Framer Motion", icon: TbBrandFramerMotion },
+    ],
+    icon: SiFramework,
+  },
+  {
+    index: 3,
+    title: "Backend",
+    desc: "Backend technologies for server-side development",
+    value: [
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "MongoDB", icon: SiMongodb },
+    ],
+    icon: FaServer,
+  },
+  {
+    index: 4,
+    title: "Tools",
+    desc: "Tools that I know and use on a daily basis",
+    value: [
+      { name: "Git", icon: FaGitAlt },
+      { name: "GitHub", icon: FaGithub },
+      { name: "VS Code", icon: TbBrandVscode },
+      { name: "Postman", icon: SiPostman },
+    ],
+    icon: FaTools,
+  },
+];
+
+const TechCategory = ({ item, index, activeIndex, toggleAccordion }) => (
+  <div key={index} className="rounded-lg shadow-md p-4 mb-4 w-full">
+    <h2
+      className="flex justify-between font-medium text-center mb-4 cursor-pointer items-center gap-4"
+      onClick={() => toggleAccordion(index)}
+    >
+      <div className="flex items-center gap-4">
+        <item.icon className="text-4xl" />
+        <div className="flex flex-col items-start">
+          <span>{item.title}</span>
+          <span className="text-xs text-left font-extralight">{item.desc}</span>
+        </div>
+      </div>
+      <div>{activeIndex === index ? "▲" : "▼"}</div>
+    </h2>
+    <div
+      className={`flex flex-col justify-center ${
+        activeIndex === index ? "block" : "hidden"
+      }`}
+    >
+      {item.value.map((tech, i) => (
+        <div key={i}>
+          <Reveal>
+            <span className="flex justify-between items-center bg-secondary-900 text-slate-200 rounded-md px-4 py-2 m-2">
+              <tech.icon className="text-xl mr-2" />
+              <span className="ml-2">{tech.name}</span>
+            </span>
+          </Reveal>
+        </div>
+      ))}
+    </div>
+  </div>
+);
 
 const TechStack = () => {
-  const techStack = [
-    {
-      index: 1,
-      title: 'Languages',
-      value: 'C/C++, HTML, CSS, JavaScript, TypeScript',
-    },
-    {
-      index: 2,
-      title: 'Frmeaworks & Libraries',
-      value: 'React, Next.js, Tailwind CSS, Bootstrap, Framermotion',
-    },
-    {
-      index: 3,
-      title: 'Backend',
-      value: 'Node.js, Express.js, MongoDB',
-    },
-    {
-      index: 4,
-      title: 'Tools',
-      value: 'Git, Github, VS Code, Postman',
-    },
-  ];
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
+    <div className="flex flex-col justify-center items-center md:min-h-screen">
       <div className="flex flex-col items-center mb-4">
-        <h1 className="text-4xl font-semibold tracking-widest uppercase">Tech Stack</h1>
+        <h1 className="text-4xl font-semibold tracking-widest uppercase">
+          Tech Stack
+        </h1>
         <Bar />
       </div>
-      <div className="flex flex-col items-center w-full">
-        {techStack.map((item, index) => (
-          <div key={index} className="w-full md:w-2/3 lg:w-1/2 rounded-lg shadow-md p-4 ">
-            <h2 className="font-medium text-center mb-4">{item.title}</h2>
-            <div className="flex flex-wrap justify-center">
-              {item.value.split(',').map((tech, index) => (
-                <Reveal key={index}>
-                  <motion.span className="flex flex-wrap bg-secondary-900 text-slate-200 rounded-md px-4 py-2 m-2">
-                    {tech.trim()}
-                  </motion.span>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        ))}
+      <div className="flex flex-col md:flex-row justify-between w-10/12 md:w-3/4 lg:w-2/3">
+        <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
+          {techStack.slice(0, 2).map((item, index) => (
+            <TechCategory
+              key={index}
+              item={item}
+              index={index}
+              activeIndex={activeIndex}
+              toggleAccordion={toggleAccordion}
+            />
+          ))}
+        </div>
+        <div className="w-full md:w-1/2 flex flex-col items-center">
+          {techStack.slice(2).map((item, index) => (
+            <TechCategory
+              key={index + 2}
+              item={item}
+              index={index + 2}
+              activeIndex={activeIndex}
+              toggleAccordion={toggleAccordion}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

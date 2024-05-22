@@ -37,17 +37,16 @@ const About = () => {
   ];
 
   return (
-    <div class="relative mt-16 flex flex-col justify-center items-center min-h-screen ">
-     <div className="mt-10 flex flex-col items-center">
+    <div class="relative md:mt-16 flex flex-col justify-center items-center min-h-screen ">
+     <div className="md:mt-10 flex flex-col items-center">
        <h1 className="text-3xl md:text-4xl font-semibold tracking-widest uppercase">About Me</h1>
         <Bar />
       </div>
-      <div class="w-full py-20 flex flex-col md:flex-row justify-around px-6 md:px-32">
+      <div class="w-full pb-20 flex flex-col md:flex-row justify-around px-6 md:px-32">
         <div class="flex flex-col  divide-y divide-slate-200 [&>*]:py-14">
           <div class="w-full max-w-md mx-auto">
             <div class="-my-6">
-              <h2 className="text-2xl font-bold text-center mb-6">Education</h2>
-
+              <h2 className="text-2xl font-bold text-center mb-4">Education</h2>
               {educationData.map((item) => (
             <Reveal>
                 <div key={item.id} class="relative pl-8 sm:pl-32 py-6 group">
@@ -70,7 +69,7 @@ const About = () => {
         <div class="flex flex-col  divide-y divide-slate-200 [&>*]:py-14">
           <div class="w-full max-w-md mx-auto">
             <div class="-my-6">
-              <h2 className="text-2xl font-bold text-center mb-8">
+              <h2 className="text-2xl font-bold text-center mb-4">
                 Work Experience
               </h2>
               {workExperienceData.map((item) => (
