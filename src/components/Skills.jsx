@@ -109,7 +109,7 @@ const TechCategory = ({ item, index, activeIndex, toggleAccordion }) => (
   </div>
 );
 
-const TechStack = () => {
+const Skills = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -120,7 +120,7 @@ const TechStack = () => {
     <div className="flex flex-col justify-center items-center md:min-h-screen">
       <div className="flex flex-col items-center mb-4">
         <h1 className="text-4xl font-semibold tracking-widest uppercase">
-          Tech Stack
+          Skills
         </h1>
         <Bar />
       </div>
@@ -152,4 +152,4 @@ const TechStack = () => {
   );
 };
 
-export default TechStack;
+export default Skills;

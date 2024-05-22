@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Reveal from "./components/Animations/Reveal";
 import About from "./components/About";
-import TechStack from "./components/TechStack";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <About />
       </Reveal>
       <Reveal>
-        <TechStack />
+        <Skills />
       </Reveal>
       <Reveal>
         <Projects />
