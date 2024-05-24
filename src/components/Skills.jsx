@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Bar from "./Animations/Bar";
-import { FaTools, FaServer, FaGithub, FaGitAlt } from "react-icons/fa";
+import { FaGithub, FaGitAlt } from "react-icons/fa";
 import { PiCodeDuotone } from "react-icons/pi";
 import {
-  SiFramework,
   SiCplusplus,
   SiHtml5,
   SiCss3,
@@ -19,8 +18,9 @@ import {
   SiPostman,
 } from "react-icons/si";
 
-import { TbBrandFramerMotion, TbBrandVscode } from "react-icons/tb";
-
+import { TbBrandFramerMotion, TbBrandVscode,TbServerBolt } from "react-icons/tb";
+import { RiToolsLine } from "react-icons/ri";
+import { VscLibrary } from "react-icons/vsc";
 import Reveal from "./Animations/Reveal";
 
 const techStack = [
@@ -48,7 +48,7 @@ const techStack = [
       { name: "Bootstrap", icon: SiBootstrap },
       { name: "Framer Motion", icon: TbBrandFramerMotion },
     ],
-    icon: SiFramework,
+    icon: VscLibrary,
   },
   {
     index: 3,
@@ -59,7 +59,7 @@ const techStack = [
       { name: "Express.js", icon: SiExpress },
       { name: "MongoDB", icon: SiMongodb },
     ],
-    icon: FaServer,
+    icon: TbServerBolt,
   },
   {
     index: 4,
@@ -71,7 +71,7 @@ const techStack = [
       { name: "VS Code", icon: TbBrandVscode },
       { name: "Postman", icon: SiPostman },
     ],
-    icon: FaTools,
+    icon: RiToolsLine,
   },
 ];
 

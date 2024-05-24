@@ -1,6 +1,4 @@
 import React from 'react';
-
-// import { RxHamburgerMenu } from "react-icons/rx";
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
