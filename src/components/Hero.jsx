@@ -22,7 +22,8 @@ const reachOut = [
   },
   {
     name: "Resume",
-    link: "https://drive.google.com/file/d/1n_pFr0-pNkFrdCHeVNoPukkVC8Lbfpkw/view?usp=sharing",
+    // link: "https://drive.google.com/file/d/1n_pFr0-pNkFrdCHeVNoPukkVC8Lbfpkw/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1upO788OGfCSf1vjEot4yDmVieqiDsQbz/view?usp=drive_link",
     icon: <FaFileDownload />,
   },
 ];
