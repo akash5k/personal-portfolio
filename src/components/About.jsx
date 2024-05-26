@@ -19,8 +19,8 @@ const About = () => {
       index: 2,
       title: "Intermediate",
       place: "FIITJEE Jr College, Vishakhapatnam",
-      year: "2018 - 2010",
-      grades: "CGPA - 9.3",
+      year: "2018 - 2020",
+      grades: "CGPA - 9.48",
     },
     {
       index: 3,
