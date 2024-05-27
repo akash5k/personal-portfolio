@@ -23,7 +23,7 @@ const reachOut = [
   {
     name: "Resume",
     // link: "https://drive.google.com/file/d/1n_pFr0-pNkFrdCHeVNoPukkVC8Lbfpkw/view?usp=sharing",
-    link: "https://drive.google.com/file/d/19aPIz3ouIWgNtaUzG44BPdN4LLcKD0yT/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1huL8W-uixncr8pYLcp1on3p0S3vyKnII/view?usp=sharing",
     icon: <FaFileDownload />,
   },
 ];
