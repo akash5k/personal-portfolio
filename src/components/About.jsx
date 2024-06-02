@@ -13,7 +13,7 @@ const About = () => {
       title: "B.Tech in Information Technology",
       place: "IIIT Bhubaneswar",
       year: "2020 - 2024",
-      grades: "CGPA upto 7rd semester - 8.13",
+      grades: "CGPA upto 7th semester - 8.13",
     },
     {
       index: 2,
