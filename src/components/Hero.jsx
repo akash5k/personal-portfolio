@@ -71,7 +71,7 @@ const Hero = () => {
           </h1>
           <p className="text-md md:text-xl opacity-60 mx-10 text-balance">
             Full-stack Web Developer with expertise in React, and Competitive
-            Programming. Final year IT undergrad at IIIT Bhubaneswar, India.
+            Programming. Graduate in IT from IIIT Bhubaneswar, India.
           </p>
           <motion.span
             className="text-xs"
