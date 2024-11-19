@@ -34,7 +34,7 @@ const About = () => {
   const workExperienceData = [
     {
       index: 1,
-      title: "Intership Trainee",
+      title: "Internship Trainee",
       place: "Hindustan Aeronautics Limited",
       year: "2022",
     },
