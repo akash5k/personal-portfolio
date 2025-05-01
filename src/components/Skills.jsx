@@ -16,8 +16,9 @@ import {
   SiExpress,
   SiMongodb,
   SiPostman,
+  SiMysql,
   SiPhp, 
-  SiPostgresql }
+  SiPostgresql 
 } from "react-icons/si";
 
 import { TbBrandFramerMotion, TbBrandVscode,TbServerBolt } from "react-icons/tb";
@@ -59,9 +60,10 @@ const techStack = [
     value: [
       { name: "Node.js", icon: SiNodedotjs },
       { name: "Express.js", icon: SiExpress },
-      { name: "MongoDB", icon: SiMongodb },
       { name: "PHP", icon: SiPhp },
       { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "MySql",icon: SiMysql },
+      { name: "MongoDB", icon: SiMongodb },
     ],
     icon: TbServerBolt,
   },
