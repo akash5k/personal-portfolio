@@ -38,6 +38,12 @@ const About = () => {
       place: "Hindustan Aeronautics Limited",
       year: "2022",
     },
+    {
+      index: 2,
+      title: "SoftwareEngineer Trainee",
+      place: "Secuodsoft Technologies Private Limited",
+      year: "2025-Present",
+    },
   ];
 
   return (
