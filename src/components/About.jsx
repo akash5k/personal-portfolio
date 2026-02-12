@@ -34,15 +34,16 @@ const About = () => {
   const workExperienceData = [
     {
       index: 1,
-      title: "Internship Trainee",
-      place: "Hindustan Aeronautics Limited",
-      year: "2022",
+title: "Junior Software Engineer",
+      place: "Secuodsoft Technologies Private Limited",
+      year: "2025-Present",
+      
     },
     {
       index: 2,
-      title: "Software Engineer Trainee",
-      place: "Secuodsoft Technologies Private Limited",
-      year: "2025-Present",
+      title: "Internship Trainee",
+      place: "Hindustan Aeronautics Limited",
+      year: "2022",
     },
   ];
 
